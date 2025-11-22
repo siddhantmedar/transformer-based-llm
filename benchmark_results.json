@@ -1,0 +1,81 @@
+{
+  "device": "mps",
+  "model_params": 5755623,
+  "config": {
+    "n_layers": 6,
+    "d_model": 128,
+    "num_head": 4,
+    "block_size": 256
+  },
+  "benchmarks": [
+    {
+      "test_id": 1,
+      "prompt": "Music",
+      "max_tokens": 50,
+      "time_no_cache": 1.383,
+      "time_with_cache": 0.8006,
+      "speedup": 1.73,
+      "time_saved_seconds": 0.5825,
+      "time_saved_percent": 42.12
+    },
+    {
+      "test_id": 2,
+      "prompt": "Music",
+      "max_tokens": 100,
+      "time_no_cache": 1.5806,
+      "time_with_cache": 2.7831,
+      "speedup": 0.57,
+      "time_saved_seconds": -1.2024,
+      "time_saved_percent": -76.07
+    },
+    {
+      "test_id": 3,
+      "prompt": "Music",
+      "max_tokens": 200,
+      "time_no_cache": 4.5798,
+      "time_with_cache": 3.0866,
+      "speedup": 1.48,
+      "time_saved_seconds": 1.4931,
+      "time_saved_percent": 32.6
+    },
+    {
+      "test_id": 4,
+      "prompt": "To be or not to be",
+      "max_tokens": 50,
+      "time_no_cache": 0.6529,
+      "time_with_cache": 0.6175,
+      "speedup": 1.06,
+      "time_saved_seconds": 0.0355,
+      "time_saved_percent": 5.43
+    },
+    {
+      "test_id": 5,
+      "prompt": "To be or not to be",
+      "max_tokens": 100,
+      "time_no_cache": 1.2039,
+      "time_with_cache": 1.2184,
+      "speedup": 0.99,
+      "time_saved_seconds": -0.0145,
+      "time_saved_percent": -1.21
+    },
+    {
+      "test_id": 6,
+      "prompt": "To be or not to be",
+      "max_tokens": 200,
+      "time_no_cache": 2.7178,
+      "time_with_cache": 2.5454,
+      "speedup": 1.07,
+      "time_saved_seconds": 0.1724,
+      "time_saved_percent": 6.34
+    }
+  ],
+  "summary": {
+    "avg_speedup": 1.15,
+    "min_speedup": 0.57,
+    "max_speedup": 1.73,
+    "total_time_no_cache": 12.118,
+    "total_time_with_cache": 11.0516,
+    "total_time_saved": 1.0664,
+    "time_saved_percent": 8.8
+  }
+}
